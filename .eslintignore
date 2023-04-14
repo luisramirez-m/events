@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+prettier.config.cjs
+
+.eslintrc.cjs
+vite.config.ts
+
+env.d.ts
+vite-env.d.ts
