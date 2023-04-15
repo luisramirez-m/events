@@ -137,15 +137,12 @@ export default {
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
-
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,
-      red: colors.red,
       orange: colors.orange,
       amber: colors.amber,
       yellow: colors.yellow,
-      lime: colors.lime,
       green: colors.green,
       emerald: colors.emerald,
       teal: colors.teal,
@@ -157,6 +154,19 @@ export default {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      red: {
+        50: '#fff0f1',
+        100: '#ffdee0',
+        200: '#ffc3c6',
+        300: '#ff999e',
+        400: '#ff5f67',
+        500: '#ff2d38',
+        600: '#f5222d',
+        700: '#ce0711',
+        800: '#aa0a12',
+        900: '#8c1016',
+        950: '#4d0206'
+      },
       blue: {
         50: '#f0f8ff',
         100: '#EBF7FF',
@@ -171,17 +181,30 @@ export default {
         950: '#062c4b'
       },
       grey: {
-        50: '#f3f5f8',
-        100: '#FAFAFB',
-        200: '#c7d1da',
-        300: '#a0b0c0',
-        400: '#8295a9',
-        500: '#576c83',
-        600: '#4b5a6f',
-        700: '#414c5d',
-        800: '#3b424f',
-        900: '#343a45',
-        950: '#20242c'
+        50: '#f8f8f8',
+        100: '#f0f0f0',
+        200: '#e4e4e4',
+        300: '#d1d1d1',
+        400: '#b4b4b4',
+        500: '#9a9a9a',
+        600: '#8c8c8c',
+        700: '#6a6a6a',
+        800: '#5a5a5a',
+        900: '#4e4e4e',
+        950: '#282828'
+      },
+      lime: {
+        50: '#fcffe6',
+        100: '#f7fec9',
+        200: '#ecfd99',
+        300: '#dcf85e',
+        400: '#c9ee2d',
+        500: '#abd40e',
+        600: '#84aa06',
+        700: '#5B8C00',
+        800: '#4f650f',
+        900: '#435611',
+        950: '#223003'
       }
     }),
     columns: {
@@ -326,7 +349,7 @@ export default {
     },
     fontFamily: {
       sans: [
-        'SF Pro Display',
+        '"SF Pro Display"',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
