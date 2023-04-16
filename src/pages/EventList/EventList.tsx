@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { Tabs } from '@components/index';
 import { EventCard } from '@elements/index';
-import useQueryGetEvents from '@hooks/useQueryGetEvents';
+import { useQueryGetEvents } from '@hooks/index';
 import { IEvent } from '@interfaces/eventInterface';
 import { BodyLayout, HeaderLayout } from '@layouts/index';
 import { bookingsMock } from '@mocks/bookingMock';

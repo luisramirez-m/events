@@ -1,5 +1,4 @@
-import EventDetail from '@pages/EventDetail/EventDetail';
-import { EventList } from '@pages/index';
+import { EventList, EventDetail } from '@pages/index';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 const App = () => (
