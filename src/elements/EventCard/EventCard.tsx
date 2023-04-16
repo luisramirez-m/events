@@ -15,7 +15,7 @@ const EventCard = ({ event, bookings, className }: IEventCardProps) => {
   const { image, title, startAt, endAt, remainingTickets, price, state, maxTickets } = event;
 
   return (
-    <Card className={`grid grid-cols-2 items-center gap-4 md:grid-cols-6 ${className}`}>
+    <Card className={`grid grid-cols-2 items-center gap-4 md:grid-cols-6 ${className || ''}`}>
       <div className="col-span-2 md:col-span-1">
         <EventCardImage image={image.url} title={title} />
       </div>
@@ -34,7 +34,7 @@ const EventCard = ({ event, bookings, className }: IEventCardProps) => {
 
       <div className="md:text-center">
         <div className="mb-2 text-sm font-semibold text-grey-600">Places restantes</div>
-        <EventCardRemainingTickets maxTickets={maxTickets} remainingTickets={remainingTickets} />
+        <EventCardRemainingTickets maxTickets={maxTickets} remainingTickets={remainingTickets} state={state} />
       </div>
 
       <div className="col-span-2 flex md:col-span-1 md:justify-end">
