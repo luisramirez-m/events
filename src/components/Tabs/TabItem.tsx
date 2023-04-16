@@ -8,9 +8,9 @@ export interface ITabItemProps extends HTMLAttributes<HTMLButtonElement> {
 
 const TabItem = ({ children, isActive = false, onClick }: ITabItemProps) => (
   <button
-    className={classNames('w-full py-1 px-4 rounded', {
+    className={classNames('w-full rounded px-4 py-1', {
       'bg-blue-100 text-blue-500': isActive,
-      'text-grey-400': !isActive
+      'text-grey-500': !isActive
     })}
     onClick={onClick}
     type="button">

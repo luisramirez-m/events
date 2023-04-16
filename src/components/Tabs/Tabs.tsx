@@ -4,7 +4,7 @@ import TabItem from './TabItem';
 
 export type ITabsProps = HTMLAttributes<HTMLDivElement>;
 
-const Tabs = ({ children }: ITabsProps) => <div className="flex bg-white shadow rounded-lg p-1">{children}</div>;
+const Tabs = ({ children }: ITabsProps) => <div className="flex w-full rounded-lg bg-white p-1 shadow md:w-fit">{children}</div>;
 
 Tabs.Item = TabItem;
 
