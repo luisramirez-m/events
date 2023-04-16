@@ -6,7 +6,7 @@ import EventCard from './EventCard';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof EventCard> = {
-  title: 'Element/EventCard',
+  title: 'Elements/EventCard',
   component: EventCard
 };
 
