@@ -1,3 +1,4 @@
+import EventDetail from '@pages/EventDetail/EventDetail';
 import { EventList } from '@pages/index';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 
@@ -6,6 +7,7 @@ const App = () => (
     <Routes>
       <Route element={<Navigate to="/events" />} path="/" />
       <Route element={<EventList />} path="/events" />
+      <Route element={<EventDetail />} path="/events/:eventId" />
     </Routes>
   </HashRouter>
 );
