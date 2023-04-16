@@ -1,6 +1,8 @@
 import classNames from 'classnames';
 import { useMediaQuery } from 'react-responsive';
 
+import generatePrice from '@utils/generatePrice';
+
 export interface IEventPriceProps {
   price: string;
   state: string;
@@ -9,17 +11,16 @@ export interface IEventPriceProps {
 const EventPrice = ({ price, state }: IEventPriceProps) => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
-  const generatePrice = (): string => (price === '0.0' ? 'Gratuit' : price);
-
   return (
     <>
       {isMobile && (
         <div
-          className={classNames('flex w-full justify-center rounded-xl py-4 text-xl  font-semibold', {
+          className={classNames('flex w-full justify-center rounded-xl py-4 text-xl font-semibold', {
             'bg-lime-50 text-lime-700': state === 'active',
             'bg-grey-50 text-grey-400': state === 'archived'
-          })}>
-          {generatePrice()}
+          })}
+          data-testid="event-price">
+          {generatePrice(price)}
         </div>
       )}
       {!isMobile && (
@@ -42,8 +43,9 @@ const EventPrice = ({ price, state }: IEventPriceProps) => {
                 'text-lime-700': state === 'active',
                 'text-grey-400': state === 'archived'
               }
-            )}>
-            {generatePrice()}
+            )}
+            data-testid="event-price">
+            {generatePrice(price)}
           </div>
         </div>
       )}

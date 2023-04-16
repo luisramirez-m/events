@@ -10,7 +10,8 @@ const EventRemainingTickets = ({ maxTickets, remainingTickets }: IEventRemaining
     className={classNames('flex h-10 items-center md:justify-center', {
       'text-red-600': maxTickets === remainingTickets || remainingTickets <= 5,
       'text-blue-500': maxTickets !== remainingTickets
-    })}>
+    })}
+    data-testid="event-remaining-tickets">
     {maxTickets === remainingTickets ? 'Complet' : remainingTickets}
   </div>
 );

@@ -8,7 +8,7 @@ const ParticipantAvarar = ({ user }: IParticipantAvararProps) => {
   const { avatar, firstName, lastName, color } = user;
 
   return (
-    <>
+    <div data-testid="participant-avatar">
       {'url' in avatar && (
         <div
           className=" h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat"
@@ -22,7 +22,7 @@ const ParticipantAvarar = ({ user }: IParticipantAvararProps) => {
           {lastName.charAt(0)}
         </div>
       )}
-    </>
+    </div>
   );
 };
 

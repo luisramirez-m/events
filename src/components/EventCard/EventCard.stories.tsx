@@ -1,3 +1,4 @@
+import { bookingsMock } from '@mocks/bookingMock';
 import { eventsMock } from '@mocks/eventMock';
 
 import EventCard from './EventCard';
@@ -13,5 +14,5 @@ export default meta;
 type Story = StoryObj<typeof EventCard>;
 
 export const Primary: Story = {
-  render: () => <EventCard event={eventsMock[1]} />
+  render: () => <EventCard bookings={bookingsMock} event={eventsMock[1]} />
 };
