@@ -1,7 +1,17 @@
 export { default as Tabs } from './Tabs/Tabs';
-export { default as ParticipantsList } from './ParticipantList/ParticipantList';
-export { default as ParticipantAvatar } from './ParticipantAvatar/ParticipantAvatar';
-export { default as ParticipantCount } from './ParticipantCount/ParticipantCount';
-export { default as EventCard } from './EventCard/EventCard';
-export { default as EventPrice } from './EventPrice/EventPrice';
-export { default as EventRemainingTickets } from './EventRemainingTickets/EventRemainingTickets';
+export { default as Avatar } from './Avatar/Avatar';
+export { default as Card } from './Card/Card';
+
+// EventCard
+export { default as EventCardRemainingTickets } from './EventCardRemainingTickets/EventCardRemainingTickets';
+export { default as EventCardParticipantList } from './EventCardParticipantList/EventCardParticipantList';
+export { default as EventCardParticipantCount } from './EventCardParticipantCount/EventCardParticipantCount';
+export { default as EventPrice } from './EventCardPrice/EventCardPrice';
+
+// EventDetail
+export { default as EventDetailDate } from './EventDetailDate/EventDetailDate';
+export { default as EventDetailHour } from './EventDetailHour/EventDetailHour';
+export { default as EventDetailImage } from './EventDetailImage/EventDetailImage';
+
+// EventDetailParticipantList
+export { default as EventDetailParticipantListItem } from './EventDetailParticipantListItem/EventDetailParticipantListItem';
