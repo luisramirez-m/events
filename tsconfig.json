@@ -21,7 +21,8 @@
       "@layout/*": ["./src/layout/*"],
       "@mocks/*": ["./src/mocks/*"],
       "@services/*": ["./src/services/*"],
-      "@interfaces/*": ["./src/interfaces/*"]
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src"],
