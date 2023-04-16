@@ -16,7 +16,7 @@ const EventDetailPrice = ({ isReserved, price }: IEventDetailPriceProps) => (
     data-testid="event-price">
     {isReserved ? (
       <>
-        🎉 J’y vais ! <span className="font-semibold">(1 place réservée)</span>
+        🎉 J’y vais!<span className="ml-1 font-semibold">(1 place réservée)</span>
       </>
     ) : (
       <span className="text-xl font-semibold">{generatePrice(price)}</span>
