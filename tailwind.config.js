@@ -136,7 +136,6 @@ export default {
       transparent: colors.transparent,
       black: colors.black,
       white: colors.white,
-      slate: colors.slate,
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,
@@ -194,7 +193,7 @@ export default {
       },
       grey: {
         50: '#f8f8f8',
-        100: '#f0f0f0',
+        100: '#FAFAFB',
         200: '#e4e4e4',
         300: '#F6F8FA',
         400: '#b4b4b4',
@@ -205,6 +204,20 @@ export default {
         900: '#4e4e4e',
         950: '#282828'
       },
+      slate: {
+        50: '#f0f3f7',
+        100: '#eaeef4',
+        200: '#d1dbe6',
+        300: '#a9bcd0',
+        400: '#7b99b5',
+        500: '#5a7d9d',
+        600: '#476482',
+        700: '#3a516a',
+        800: '#334559',
+        900: '#2e3c4c',
+        950: '#1f2732'
+      },
+
       lime: {
         50: '#fcffe6',
         100: '#f7fec9',
