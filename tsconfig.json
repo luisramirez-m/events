@@ -18,11 +18,13 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
-      "@layout/*": ["./src/layout/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@elements/*": ["./src/elements/*"],
       "@mocks/*": ["./src/mocks/*"],
       "@services/*": ["./src/services/*"],
       "@interfaces/*": ["./src/interfaces/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@icons/*": ["./src/icons/*"]
     }
   },
   "include": ["src"],

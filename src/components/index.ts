@@ -6,7 +6,8 @@ export { default as Card } from './Card/Card';
 export { default as EventCardRemainingTickets } from './EventCardRemainingTickets/EventCardRemainingTickets';
 export { default as EventCardParticipantList } from './EventCardParticipantList/EventCardParticipantList';
 export { default as EventCardParticipantCount } from './EventCardParticipantCount/EventCardParticipantCount';
-export { default as EventPrice } from './EventCardPrice/EventCardPrice';
+export { default as EventCardPrice } from './EventCardPrice/EventCardPrice';
+export { default as EventCardImage } from './EventCardImage/EventCardImage';
 
 // EventDetail
 export { default as EventDetailDate } from './EventDetailDate/EventDetailDate';
