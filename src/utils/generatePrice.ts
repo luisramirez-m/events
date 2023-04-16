@@ -1,3 +1,3 @@
-const generatePrice = (price: string): string => (price === '0.0' ? 'Gratuit' : price);
+const generatePrice = (price: string): string => (Number(price) === 0 ? 'Gratuit' : `${price} €`);
 
 export default generatePrice;
