@@ -1,19 +1,21 @@
+import { HTMLAttributes } from 'react';
+
 import { EventCardRemainingTickets, EventCardParticipantList, Card, EventCardImage, EventCardPrice } from '@components/index';
 import { IBooking } from '@interfaces/bookingInterface';
 import { IEvent } from '@interfaces/eventInterface';
 
 import generateBeautifyDate from '@utils/generateBeautifyDate';
 
-export interface IEventCardProps {
+export interface IEventCardProps extends HTMLAttributes<HTMLDivElement> {
   event: IEvent;
   bookings: IBooking[];
 }
 
-const EventCard = ({ event, bookings }: IEventCardProps) => {
+const EventCard = ({ event, bookings, className }: IEventCardProps) => {
   const { image, title, startAt, endAt, remainingTickets, price, state, maxTickets } = event;
 
   return (
-    <Card className="grid grid-cols-2 items-center gap-4 md:grid-cols-6">
+    <Card className={`grid grid-cols-2 items-center gap-4 md:grid-cols-6 ${className}`}>
       <div className="col-span-2 md:col-span-1">
         <EventCardImage image={image.url} title={title} />
       </div>
