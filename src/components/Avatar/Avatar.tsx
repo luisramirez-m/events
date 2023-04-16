@@ -1,23 +1,25 @@
 import { IBookingUser } from '@interfaces/bookingInterface';
 
-export interface IParticipantAvararProps {
+export interface IAvatarProps {
   user: IBookingUser;
 }
 
-const ParticipantAvarar = ({ user }: IParticipantAvararProps) => {
+const Avatar = ({ user }: IAvatarProps) => {
   const { avatar, firstName, lastName, color } = user;
 
   return (
     <div data-testid="participant-avatar">
       {'url' in avatar && (
         <div
-          className=" h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat"
+          className="h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${avatar.url})` }}
         />
       )}
 
       {!('url' in avatar) && (
-        <div className=" flex h-10 w-10 items-center justify-center rounded-full text-white" style={{ backgroundColor: color }}>
+        <div
+          className="flex h-10 w-10 items-center justify-center rounded-full text-sm text-white"
+          style={{ backgroundColor: color }}>
           {firstName.charAt(0)}
           {lastName.charAt(0)}
         </div>
@@ -26,4 +28,4 @@ const ParticipantAvarar = ({ user }: IParticipantAvararProps) => {
   );
 };
 
-export default ParticipantAvarar;
+export default Avatar;
