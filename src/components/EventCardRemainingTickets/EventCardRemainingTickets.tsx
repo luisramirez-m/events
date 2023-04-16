@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 
-export interface IEventRemainingTicketsProps {
+export interface IEventCardRemainingTicketsProps {
   maxTickets: number;
   remainingTickets: number;
 }
 
-const EventRemainingTickets = ({ maxTickets, remainingTickets }: IEventRemainingTicketsProps) => (
+const EventCardRemainingTickets = ({ maxTickets, remainingTickets }: IEventCardRemainingTicketsProps) => (
   <div
     className={classNames('flex h-10 items-center md:justify-center', {
       'text-red-600': maxTickets === remainingTickets || remainingTickets <= 5,
@@ -16,4 +16,4 @@ const EventRemainingTickets = ({ maxTickets, remainingTickets }: IEventRemaining
   </div>
 );
 
-export default EventRemainingTickets;
+export default EventCardRemainingTickets;
