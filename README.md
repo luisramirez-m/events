@@ -13,7 +13,7 @@ Project generated with [vitejs](https://vitejs.dev/).
 - `yarn test`, Runs tests with Jest.
 - `yarn storybook`: Starts the Storybook server to view components. [http://localhost:6006/](http://localhost:6006/)
 
-<sub>Sometimes vitejs changes the port, to be sure which is your port you can see in your terminal</sub>
+<sub>Sometimes vitejs changes the port, to be sure which is your port you can watch in your terminal</sub>
 
 ## Technologies Used
 
