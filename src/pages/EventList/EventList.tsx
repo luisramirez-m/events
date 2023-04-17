@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Tabs } from '@components/index';
+import { Empty, Tabs } from '@components/index';
 import { EventCard } from '@elements/index';
 import { useQueryGetEvents } from '@hooks/index';
 import { IEvent } from '@interfaces/eventInterface';
@@ -54,6 +54,8 @@ const EventList = () => {
             ))}
           </div>
         )}
+
+        {!eventsFiltered && <Empty height={500} message="Il n’y a rien ici pour le moment" title="Pas d’événement" />}
       </BodyLayout>
     </div>
   );

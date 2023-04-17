@@ -2,6 +2,7 @@ export { default as Tabs } from './Tabs/Tabs';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Card } from './Card/Card';
 export { default as Modal } from './Modal/Modal';
+export { default as Empty } from './Empty/Empty';
 
 // EventCard
 export { default as EventCardRemainingTickets } from './EventCardRemainingTickets/EventCardRemainingTickets';
